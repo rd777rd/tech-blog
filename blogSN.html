@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <header>
+            <div class="nav-section">
+                <!--<img src="" class="logoImg"> -->
+                <p class="logo">Top Blogs</p>
+                <ul class="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Trending</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div> 
+            </div>
+            <div class="dropdown-menu">
+                <ul class="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Trending</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+</header>
+<h1 id="page-header">Blogs</h1>
+<section class="blogs">
+    <div class="single-blog">
+        <h1 class="blogTitle">Satya Nadella: From Tech Trailblazer to Microsoft's Wealthy Visionary</h1>
+        <p class="blogAuthor">Roman Drake</p><span class="publish-date">2/26/24</span>
+        <p class="blogText">
+            At the helm of one of the world's most influential tech companies stands Satya Nadella, a visionary leader whose journey embodies the intersection of technology and wealth. Born in 1967 in Hyderabad, India, Nadella's ascent to prominence as the CEO of Microsoft is a testament to his relentless pursuit of innovation and his profound impact on the tech industry.
+</p>
+<p class="blogText">
+Nadella's career trajectory began with a strong foundation in technology. After earning degrees in electrical engineering and computer science, he embarked on a path that would ultimately lead him to the pinnacle of the tech world. Joining Microsoft in 1992, Nadella's early years at the company were marked by steady progression through various leadership roles, where he showcased his technical expertise and strategic acumen.
+</p>
+<p class="blogText">
+However, Nadella's most significant achievement came in 2014 when he was appointed as the CEO of Microsoft, succeeding Steve Ballmer. This pivotal moment marked the beginning of a new era for the tech giant, as Nadella embarked on a mission to transform Microsoft into a leader in cloud computing and AI.
+</p>
+<p class="blogText">
+Under Nadella's leadership, Microsoft experienced a remarkable resurgence, with its market value skyrocketing to over $2 trillion. His strategic vision and emphasis on innovation propelled the company to new heights, as evidenced by the success of products and services like Azure, Office 365, and Teams.
+</p>
+<p class="blogText">
+Nadella's impact on the tech industry extends beyond Microsoft, as he has emerged as a thought leader and advocate for ethical AI and digital inclusion. His commitment to leveraging technology for social good has earned him widespread recognition and accolades, including being named one of the "World's Most Powerful People" by Forbes.
+</p>
+<p class="blogText">
+In terms of wealth, Nadella's net worth is estimated to be in the billions, a testament to his successful tenure at Microsoft and his contributions to the tech industry as a whole. However, before achieving wealth and prominence, Nadella was a driven and dedicated individual who tirelessly pursued his passion for technology.
+</p>
+<p class="blogText">
+Reflecting on his journey, Nadella emphasizes the importance of empathy, humility, and continuous learning in driving growth in tech and wealth. He believes that technology has the power to empower individuals and organizations to achieve more, but only if approached with a sense of purpose and responsibility.
+</p>
+<p class="blogText">
+As Nadella once remarked, "Success is not about the past, but about how you build on it." His words serve as a reminder that success in the tech industry is not merely about achieving wealth and recognition, but about making a meaningful impact and driving positive change in the world.
+</p>
+<p class="blogText">
+In conclusion, Satya Nadella's journey from a young engineer to the CEO of Microsoft is a testament to the transformative power of technology and the pursuit of excellence. His leadership, vision, and commitment to innovation have not only propelled Microsoft to new heights but have also inspired countless individuals to embrace the limitless possibilities of the tech world. As we navigate the ever-evolving landscape of technology and wealth, Nadella's legacy serves as a beacon of inspiration for generations to come.
+</p>
+        </div>
+</section>
+<hr class="blogDivider"></hr>
+<section>
+    <div class="option-container">
+        <h1>Choose A Category</h1>
+        <div class="flexContainer">
+        <div class="innovators-option-container">
+            <a href="innovators.html" class="">Innovators</a>
+        </div>
+        <div class="innovations-option-container">
+            <a href="innovations.html" class="">Innovations</a>
+        </div>
+        </div>
+    </div>
+    </section>
+    <hr class="blogDivider"></hr>
+<footer>
+<div class="footer">
+    <h1 class="footerHeading">Follow Us on Social Media</h1>
+    <div class="socialLinksContainer">
+    <ul class="socialLinks">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+    </ul>
+    </div>
+</div>
+<p style="text-align: center;">Copyright 2024</p>
+
+</footer>
+<script>
+const toggleBtn = document.querySelector('.toggle_btn')
+const toggleBtnIcon = document.querySelector('.toggle_btn i')
+const dropDownMenu = document.querySelector('.dropdown-menu')
+
+toggleBtn.onclick = function() {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList= isOpen
+    ?'fa-solid fa-x'
+    :'fa-solid fa-bars'
+}
+</script>
+</body>
+</html>

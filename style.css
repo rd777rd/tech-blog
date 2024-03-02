@@ -1,0 +1,934 @@
+*{
+    margin:0;
+    padding:0;
+ }
+body {
+    margin:0 2em;
+    background-color: black;
+    opacity: 1;
+    color:white;
+    max-width:100%;
+    text-align: center;
+
+}
+/* Nav section */
+header{
+    display:block;
+    width:100%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.nav-section{
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    margin-top: 20px;
+
+}
+
+.nav-section .logo{
+    font-size:2em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.nav-section .navLinks{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    vertical-align: center;
+}
+
+.navLinks li{
+    padding:0 10px;
+    font-size: 1em;
+
+}
+
+.navLinks a{
+    font-size: 2em;
+    text-decoration: none;
+    color:white;
+
+
+}
+
+.navLinks a:hover{
+    opacity: .3;
+    padding:15px;
+    font-size: 2.5em;
+}
+.nav-section .toggle_btn{
+    color:white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.nav-section .toggle_btn:hover{
+    color:red;
+}
+.dropdown-menu{
+    display: none;
+    position:absolute;
+    right:0rem;
+    top:60px;
+    width:full-width;
+    background-color: rgb(225, 225, 225, .3);
+    backdrop-filter: blur(35px);
+    border-radius: 5px;
+    overflow:hidden;
+    height:0;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.dropdown-menu.open{
+    height:auto;
+}
+.dropdown-menu li{
+    padding:5px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    list-style: none;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:black;
+}
+ .dropdown-menu a:hover{
+}
+/*End of nav section */
+/* Page Header */
+#page-header{
+    text-align: center;
+    font-size: 3em;
+    margin:1em auto;
+}
+/* End of Page Header */
+/* home page blog section */
+.blogs{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+    padding:20px;
+
+}
+
+.blogDivider{
+    display: block;
+    margin-top:3em;
+    margin-bottom: 3em;
+}
+
+.blogs h1{
+    display:block;
+    width: 100%;
+    text-align: center;
+    
+}
+.blog{
+    display:inline-block;
+    width:33%;
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: 0;
+    border-top:1px solid red;
+    border-bottom: 1px solid red;
+    height:auto;
+}
+.blog .blogTitle{
+font-size: 1.5em;
+text-align: center;
+margin-bottom: .5em;
+margin-top: .5em;
+color:red;
+}
+
+.blog .blogAuthor{
+    font-size:1em;
+    text-align:left;
+    text-decoration: underline;
+    opacity: .8;
+
+}
+.publish-date{
+    display: flex; 
+    font-size: 1em;
+    opacity: .8;
+    text-align: right;
+}
+
+.blog .blogText{
+    margin-top: 1em;
+    font-size: 1em;
+    text-align: left;
+    display: flex;
+}
+.blog .btn-read{
+    display: block;
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    opacity: .3;
+    padding: 20px;
+    text-align: center;
+    width:100px;
+    margin:1em auto;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+
+.btn-read:hover{
+    color:black;
+    background-color: white;
+    opacity:1;
+    font-size: 1em;
+    padding:20px;
+    text-transform: uppercase;
+}
+/*End of home page blog section */
+/*individiual article page*/
+.single-blog{
+    display:inline-block;
+    width:full-width;
+    height:auto;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 0;
+    border-top:1px solid red;
+    border-bottom: 1px solid red;
+
+}
+.single-blog .blogAuthor{
+    font-size:1em;
+    text-align:left;
+    text-decoration: underline;
+    opacity: .8;
+    
+
+}
+.single-blog .blogTitle{
+    font-size: 2em;
+text-align: center;
+margin-bottom: .5em;
+margin-top: 1em;
+
+}
+.single-blog .blogText{
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 1em;
+
+}
+.single-blog .publish-date{
+
+}
+.single-blog .btn-read{
+    display:none;
+}
+.single-blog .paragraphDivider{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    border:1px solid black;
+}
+/*End of individiual article page*/
+/* Home page options*/
+.option-container{
+    display: block;
+    width: 90%;
+    height: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.option-container h1{
+    text-align: center;
+    margin: 1em auto;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.option-container .flexContainer{
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+
+}
+.option-container .innovators-option-container{
+    display: block;
+    width: 40%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+
+
+}
+.option-container .innovations-option-container{
+    display: block;
+    width: 40%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+}
+.option-container a{
+    align-items: center;
+    line-height: 200px;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    padding: 20px;
+}
+.option-container a:hover{
+    color:white;
+}
+.innovations-option-container:hover{
+    background-color: red;
+    color: white;
+}
+.innovators-option-container:hover{
+    background-color: red;
+}
+/*End of Home page options*/
+/* Individual option page*/
+.blogOptions{
+display:block;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 1em;
+margin-top: 1em;
+}
+.optionsTitle{
+    font-size: 2.5em;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+.optionsText{
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+.optionsList{
+    margin-top: 1em;
+    list-style: none;
+    background-color: rgb(225, 225, 225, .5);
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    border-radius:10px;
+}
+.optionsLink{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:black;
+}
+.optionsLink:hover{
+    color:red;
+    font-size: 1.6em;
+    padding-bottom: 10px;
+}
+.optionsListItem{
+    padding: 5px;
+
+}
+/* End of individual option page*/
+/* footer */
+.footer{
+    display: block;
+    text-align: center;
+    width:100%;
+
+}
+
+.footerHeading{
+    display: block;
+    text-align: center;
+    margin-bottom: .5em;
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footer .socialLinks{ 
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(225, 225, 225, .3);
+    padding:30px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+.socialLinksContainer{
+    display: block;
+    width:60%;
+    margin-left:auto ;
+    margin-right: auto;
+    height:auto;
+    padding:30px;
+}
+
+.socialLinks li{
+    padding:0 10px;
+    font-size: 1em;
+
+}
+.socialLinks a{
+    font-size: 4em;
+    text-decoration: none;
+    color:black;
+    opacity:1;
+}
+.socialLinks i:hover{
+    color:white;
+    opacity: 1;
+    font-size:1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* End of footer */
+
+@media(max-width: 987px) {
+    header{
+        display: block;
+    }
+    .blogs{
+        display:block;
+        margin: auto;
+        width:100%;
+        height: auto;
+        align-items: center;
+        padding:20px;
+        text-align: center;
+    
+    }
+    .blog{
+        display: block;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .blog .blogText{
+        font-size: 1.2em;
+    }
+    .blog .blogAuthor{
+        font-size: 1.5em;
+    }
+    .blog .publish-date{
+        display: flex;
+        text-align: left;
+    }
+    .footer{
+        display: block;
+        width: 90%;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding:20px;
+    }
+    
+}
+@media(max-width:658px) {
+    .blogs{
+        display:block;
+        margin: auto;
+        width:100%;
+        height: auto;
+        align-items: center;
+        padding:20px;
+        text-align: center;
+    
+    }
+    .blog{
+        display: block;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blog .blogText{
+        font-size: 1em;
+    }
+    .blog .blogAuthor{
+        font-size: 1.2em;
+    }
+    .blog .publish-date{
+        display: flex;
+        text-align: left;
+    }
+    .footer{
+        display: block;
+        width: 80%;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding:20px;
+    }
+    .socialLinksContainer{
+        display: block;
+        width:100%;
+        margin-left:auto ;
+        margin-right: auto;
+        height:auto;
+        padding:20px;
+    }
+    
+    .socialLinks li{
+        padding:0 5px;
+        font-size: 2em;
+    
+    }
+    .socialLinks a{
+        font-size: 2em;
+        text-decoration: none;
+        color:black;
+        opacity:1;
+    }
+    .socialLinks i:hover{
+        color:white;
+        opacity: 1;
+        font-size:1.5em;
+        font-weight: bold;
+        margin-top: 10px;
+       
+    }
+    .nav-section .navLinks{
+        display: none;
+    }
+   .nav-section .toggle_btn{
+        display: block;
+        color: white;
+    }
+ .dropdown-menu{
+        display: block;
+        left:0rem;
+        width:unset;
+    }
+}
+@media(max-width:546px){
+    .blogs{
+        display:block;
+        width:90%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+
+    
+    }
+    .blog{
+        display: block;
+    }
+    .option-container .innovators-option-container{
+        display: block;
+        width: 45%;
+        height: 150px;
+        background-color: white;
+        border-radius: 10px;
+    
+    
+    }
+    .option-container .innovations-option-container{
+        display: block;
+        width: 45%;
+        height: 150px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .option-container a{
+        align-items: center;
+        line-height: 150px;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: black;
+        padding: 20px;
+    }
+    .innovations-option-container:hover{
+        background-color: red;
+    }
+    .innovators-option-container:hover{
+        background-color: red;
+    }
+    .optionsTitle{
+        font-size: 2em;
+        color:white;
+        text-align: center;
+        text-transform: uppercase;
+    
+    }
+    .optionsText{
+        font-size: 1.3em;
+        font-style: italic;
+        text-align: center;
+        font-weight: bold;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .footerHeading{
+        display: block;
+        text-align: center;
+        margin-bottom: .5em;
+        font-size: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .footer .socialLinks{ 
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: rgb(225, 225, 225, .3);
+        padding:40px 40px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+    
+    }
+    .socialLinksContainer{
+        display: block;
+        width:80%;
+        margin-left:auto ;
+        margin-right: auto;
+        height:auto;
+    }
+    
+    .socialLinks li{
+        padding:0 10px;
+        font-size: 1.5em;
+    
+    }
+    .socialLinks a{
+        font-size: 1.5em;
+        text-decoration: none;
+        color:black;
+        opacity:1;
+    }
+    .socialLinks i:hover{
+        color:white;
+        opacity: 1;
+        font-size:1.5em;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+}
+@media(max-width:420px){
+    .optionsList{
+        margin-top: 1em;
+        list-style: none;
+        background-color: rgb(225, 225, 225, .5);
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:20px;
+    }
+    .optionsTitle{
+        font-size: 1.5em;
+        color:white;
+        text-align: center;
+        text-transform: uppercase;
+    
+    }
+    .optionsText{
+        font-size: 1em;
+        font-style: italic;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+@media(max-width:401px) {
+    .option-container{
+        margin-bottom: 0;
+    }
+    .option-container .innovators-option-container{
+        display: block;
+        width: 45%;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+    
+    
+    }
+    .option-container .innovations-option-container{
+        display: block;
+        width: 45%;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .option-container a{
+        align-items: center;
+        line-height: 100px;
+        text-decoration: none;
+        font-size: 1em;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+    .innovations-option-container:hover{
+        background-color: red;
+    }
+    .innovators-option-container:hover{
+        background-color: red;
+    }
+    
+}
+@media(max-width:355px) {
+    .footer{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .footerHeading{
+        display: block;
+        text-align: center;
+        margin-bottom: .5em;
+        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .footer .socialLinks{ 
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: rgb(225, 225, 225, .3);
+        padding:30px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+    
+    }
+    .socialLinksContainer{
+        display: block;
+        width:80%;
+        margin-left:auto ;
+        margin-right: auto;
+        height:auto;
+    }
+    
+    .socialLinks li{
+        padding:0 10px;
+        font-size: 1.3em;
+        font-weight: bold;
+    
+    }
+    .socialLinks a{
+        font-size: 1em;
+        text-decoration: none;
+        color:black;
+        opacity:1;
+        font-weight: bolds;
+    }
+    .socialLinks i:hover{
+        color:white;
+        opacity: 1;
+        font-size:1em;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+}
+@media(max-width:320px) {
+    .option-container{
+        margin-bottom: 0;
+    }
+    .option-container .innovators-option-container{
+        display: block;
+        width: 45%;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+    
+    
+    }
+    .option-container .innovations-option-container{
+        display: block;
+        width: 45%;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .option-container a{
+        align-items: center;
+        line-height: 100px;
+        text-decoration: none;
+        font-size: 1em;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+    .innovations-option-container:hover{
+        background-color: red;
+    }
+    .innovators-option-container:hover{
+        background-color: red;
+    }
+    
+}
+@media(max-width:300px){
+    .nav-section .logo{
+        font-size: 1.5em;
+        text-wrap: nowrap;
+        
+    }
+    .nav-section .toggle_btn{
+        color:white;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .footerHeading{
+        display: block;
+        text-align: center;
+        margin-bottom: .5em;
+        font-size: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .footer .socialLinks{ 
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: rgb(225, 225, 225, .3);
+        padding:40px 40px;
+    
+    
+    
+    }
+    .socialLinksContainer{
+        display: block;
+        width:100%;
+        margin-left:auto ;
+        margin-right: auto;
+        height:auto;
+        padding: 0;
+    }
+    
+    .socialLinks li{
+        padding:0 10px;
+        font-size: 1em;
+    
+    }
+    .socialLinks a{
+        font-size: 1.5em;
+        text-decoration: none;
+        color:black;
+        opacity:1;
+    }
+    .socialLinks i:hover{
+        color:white;
+        opacity: 1;
+        font-size:1.5em;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .optionsLink{
+        text-decoration: none;
+        font-size: 1em;
+        color:black;
+        text-wrap: nowrap;
+        display: flex;
+        text-align:center;
+        justify-content: center;
+    }
+    .optionsList{
+        width: 70%;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .option-container{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .option-container h1{
+        font-size: 1.5em;
+    }
+    .option-container .flexContainer{
+        display: block;
+    }
+    .option-container .innovators-option-container{
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 1em;
+    
+    
+    }
+    .option-container .innovations-option-container{
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .option-container a{
+        align-items: center;
+        line-height: auto;
+        text-decoration: none;
+        font-size: 1em;
+        color: black;
+        padding: 20px;
+    }
+    .innovations-option-container:hover{
+        background-color: red;
+    }
+    .innovators-option-container:hover{
+        background-color: red;
+    }
+
+
+
+}

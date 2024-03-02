@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <div class="nav-section">
+            <!--<img src="" class="logoImg"> -->
+            <p class="logo">Top Blogs</p>
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div> 
+        </div>
+        <div class="dropdown-menu">
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div> 
+    </header>
+    <h1 id="page-header">Blogs</h1>
+    <section class="blogs">
+        <div class="blog">
+            <h1 class="blogTitle">Tech Titan's Trailblazing Journey: Ginni Rometty's Path to Empowering Wealth and Innovation</h1>
+            <p class="blogAuthor">Roman Drake</p><span class="publish-date">2/25/2024</span>
+            <p class="blogText"> 
+Ginni Rometty, a powerhouse in the tech industry at 65, garnered acclaim during her tenure as IBM's CEO from 2012 to 2020. Leading the company through a significant digital transformation, Rometty's influence on the tech sector is undeniable.<br> Her estimated net worth of over $90 million is a testament to her adept leadership at IBM and her broader impact on the realm of technology and wealth.
+Before assuming the CEO role...</p>
+            <a href="blogGR.html" class="btn btn-read">Read Blog</a>
+            </div>
+            <div class="blog">
+            <h1 class="blogTitle">Tech Luminary: Jensen Huang's Journey to Wealth and Innovation in the World of Technology</h1>
+            <p class="blogAuthor">Roman Drake </p><span class="publish-date">2/26/24</span>
+            <p class="blogText">In the dynamic world of technology and wealth, few names command as much respect as Jensen Huang, the pioneering co-founder and CEO of NVIDIA Corporation. Boasting a net worth surpassing $20 billion, Huang's trajectory from modest beginnings to becoming a tech luminary is a testament to his visionary leadership and unyielding commitment to innovation.
+                Hailing from Taiwan but raised in the United States, Huang's affinity for technology...</p>
+            <a href="blogJH.html" class="btn-read">Read Blog</a>
+            </div>
+        <div class="blog">
+            <h1 class="blogTitle">Satya Nadella: From Tech Trailblazer to Microsoft's Wealthy Visionary</h1>
+            <p class="blogAuthor">Roman Drake</p><span class="publish-date">2/26/24</span>
+            <p class="blogText" >At the helm of one of the world's most influential tech companies stands Satya Nadella, a visionary leader whose journey embodies the intersection of technology and wealth. Born in 1967 in Hyderabad, India, Nadella's ascent to prominence as the CEO of Microsoft is a testament to his relentless pursuit of innovation and his profound impact on the tech industry.
+                Nadella's career trajectory began with a strong foundation in technology...</p>
+            <a href="blogSN.html" class="btn btn-read">Read Blog</a>
+            </div>
+    </section>
+    <hr class="blogDivider"></hr>
+    <section>
+    <div class="option-container">
+        <h1>Choose A Category</h1>
+        <div class="flexContainer">
+        <div class="innovators-option-container">
+            <a href="innovators.html" class="">Innovators</a>
+        </div>
+        <div class="innovations-option-container">
+            <a href="innovations.html" class="">Innovations</a>
+        </div>
+        </div>
+    </div>
+    </section>
+    <hr class="blogDivider"></hr>
+    <footer>
+        <div class="footer">
+            <h1 class="footerHeading">Follow Us on Social Media</h1>
+            <div class="socialLinksContainer">
+            <ul class="socialLinks">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+            </ul>
+            </div>
+            <p style="text-align: center;">Copyright 2024</p>
+        </div>
+        
+        </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+        
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList= isOpen
+            ?'fa-solid fa-x'
+            :'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
